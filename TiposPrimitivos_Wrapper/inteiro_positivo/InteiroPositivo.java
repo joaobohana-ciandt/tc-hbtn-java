@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class InteiroPositivo {
-    Integer valor;
+    private Integer valor;
 
     public InteiroPositivo(Integer valor) {
         this.valor = valor;
