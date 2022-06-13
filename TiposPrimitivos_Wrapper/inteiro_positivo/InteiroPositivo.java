@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class InteiroPositivo {
-    private Integer valor;
+    private int valor;
 
     public InteiroPositivo(Integer valor) {
         this.valor = valor;
@@ -15,11 +15,11 @@ public class InteiroPositivo {
         this.valor = Integer.valueOf(valor);
     }
 
-    public Integer getValor() {
+    public int getValor() {
         return valor;
     }
 
-    public void setValor(Integer valor) {
+    public void setValor(int valor) {
         if(valor < 0){
             throw new IllegalArgumentException("Valor nao eh um valor inteiro positivo");
         }
@@ -30,12 +30,12 @@ public class InteiroPositivo {
     public boolean ehPrimo() {
         ArrayList<Integer> divisores = new ArrayList<>();
         for(int i = 1; i <= valor; i++){
-            if(Double.valueOf(valor) % i == 0){
+            if(valor % i == 0){
                 divisores.add(i);
             }
         }
 
-        if(divisores.size() == 2 && (divisores.get(0) == 1) && (divisores.get(1) == valor.intValue()) ){
+        if(divisores.size() == 2 && (divisores.get(0) == 1) && (divisores.get(1) == valor) ){
             return true;
         }
 
