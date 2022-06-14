@@ -26,11 +26,11 @@ public class PersonagemGame {
         }
     }
 
-    public void receberCura(int quantidadDeCura){
-        if(saudeAtual + quantidadDeCura > 100){
+    public void receberCura(int quantidadeDeCura){
+        if(saudeAtual + quantidadeDeCura > 100){
             saudeAtual = 100;
         } else {
-            saudeAtual += quantidadDeCura;
+            saudeAtual += quantidadeDeCura;
         }
     }
 
