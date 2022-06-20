@@ -10,7 +10,6 @@ public class Program {
         a = 9;
         b = 0;
         Numero.dividir(a, b);
-        System.out.println();
     }
 }
 
