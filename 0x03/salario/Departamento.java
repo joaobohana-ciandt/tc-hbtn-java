@@ -7,7 +7,7 @@ public class Departamento {
         this.valorAtingidoMeta = valorAtingidoMeta;
     }
 
-    public boolean atingiuMeta(){
+    public boolean alcancouMeta(){
         if(valorAtingidoMeta >= valorMeta) return true;
 
         return false;
