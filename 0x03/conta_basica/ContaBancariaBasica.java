@@ -3,11 +3,11 @@ import exceptions.OperacaoInvalidaException;
 public class ContaBancariaBasica {
     private String numeracao;
     private double saldo;
-    private double taxaDeJurosAnual;
+    private double taxaJurosAnual;
 
-    public ContaBancariaBasica(String numeracao, double taxaDeJurosAnual) {
+    public ContaBancariaBasica(String numeracao, double taxaJurosAnual) {
         this.numeracao = numeracao;
-        this.taxaDeJurosAnual = taxaDeJurosAnual;
+        this.taxaJurosAnual = taxaJurosAnual;
         this.saldo = 0;
     }
 
@@ -42,7 +42,7 @@ public class ContaBancariaBasica {
 
     public double calcularJurosMensal(){
         if(this.saldo > 0){
-            double taxaDeJurosReal = (taxaDeJurosAnual / 100);
+            double taxaDeJurosReal = (taxaJurosAnual / 100);
             return (this.saldo * taxaDeJurosReal) / 12;
         }
 
@@ -73,11 +73,11 @@ public class ContaBancariaBasica {
         this.saldo = saldo;
     }
 
-    public double getTaxaDeJurosAnual() {
-        return taxaDeJurosAnual;
+    public double getTaxaJurosAnual() {
+        return taxaJurosAnual;
     }
 
-    public void setTaxaDeJurosAnual(double taxaDeJurosAnual) {
-        this.taxaDeJurosAnual = taxaDeJurosAnual;
+    public void setTaxaJurosAnual(double taxaJurosAnual) {
+        this.taxaJurosAnual = taxaJurosAnual;
     }
 }
