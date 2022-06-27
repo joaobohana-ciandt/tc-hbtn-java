@@ -12,7 +12,7 @@ public class Tarefa {
         if(descricao != null && !descricao.isEmpty() && !descricao.isBlank()){
             setDescricao(descricao);
         } else {
-            throw new Exception("Descricao de tarefa invalida");
+            throw new IllegalArgumentException("Descricao de tarefa invalida");
         }
     }
 
