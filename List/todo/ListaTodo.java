@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListaTodo {
-    private ArrayList<Tarefa> tarefas;
+    private List<Tarefa> tarefas;
 
     public ListaTodo() {
         this.tarefas = new ArrayList<>();
@@ -62,5 +62,9 @@ public class ListaTodo {
 
             System.out.printf("Id: %d - Descricao: %s\n", t.getIdentificador(), t.getDescricao());
         }
+    }
+
+    public List<Tarefa> getTarefas() {
+        return tarefas;
     }
 }
