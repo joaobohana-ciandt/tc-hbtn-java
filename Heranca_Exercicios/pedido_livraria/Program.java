@@ -1,3 +1,6 @@
+import produtos.Dvd;
+import produtos.Livro;
+
 public class Program {
     public static void main(String[] args) {
         Livro livro1 = new Livro("Duna", 2017, "Brasil", 56.30, 680, "Frank Herbert", 1);
