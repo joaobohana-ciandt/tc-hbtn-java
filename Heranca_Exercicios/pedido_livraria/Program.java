@@ -1,8 +1,12 @@
 import produtos.Dvd;
 import produtos.Livro;
 
+import java.util.Locale;
+
 public class Program {
     public static void main(String[] args) {
+        Locale.setDefault(new Locale("pt", "BR"));
+
         Livro livro1 = new Livro("Duna", 2017, "Brasil", 56.30, 680, "Frank Herbert", 1);
         Livro livro2 = new Livro("Um de nós está mentindo", 2018, "Brasil", 34.93, 384,
                 "Karen Mcmanus", 1);
