@@ -8,8 +8,6 @@ public class AnalisadorFrase {
         char[] caracteresEspeciais = {',', '.', '?', '!'};
         TreeMap<String, Integer> map = new TreeMap<>();
         for(String p : palavrasSeparadas){
-            p = p.replaceAll("[,.?!]", "");
-
             if(p == "?" || p == "." || p == "!"){
                 continue;
             } else {
