@@ -16,13 +16,13 @@ public class Telefone {
 
     @Override
     public int hashCode() {
-        return Objects.hash(codigoArea, numero);
+        return Objects.hash(codigoArea);
     }
 
     @Override
     public boolean equals(Object obj) {
         Telefone telefone = (Telefone) obj;
-        if(telefone.codigoArea.equals(this.codigoArea) && telefone.numero.equals(this.numero)){
+        if(Objects.equals(this.codigoArea, telefone.codigoArea) && Objects.equals(this.numero, telefone.numero)){
             return true;
         }
 

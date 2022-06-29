@@ -13,17 +13,18 @@ public class ListaTelefonica {
             if(lista.get(nome).contains(telefone)){
                 throw new Exception("Telefone jah existente para essa pessoa");
             } else {
-
                 for(Map.Entry<String, HashSet<Telefone>> p : lista.entrySet()){
                     HashSet<Telefone> listaTelefones = p.getValue();
                     if(listaTelefones.contains(telefone)){
                         throw new Exception("Telefone jah pertence a outra pessoa");
                     }
                 }
-                
+
                 lista.get(nome).add(telefone);
             }
         } else {
+
+
             lista.put(nome, new HashSet<>());
             lista.get(nome).add(telefone);
         }
