@@ -73,7 +73,7 @@ public class Blog {
             if(categoriasPost.containsKey(p.getCategoria())){
                 categoriasPost.get(p.getCategoria()).add(p);
             } else {
-                HashSet<Post> posts = new HashSet<>();
+                TreeSet<Post> posts = new TreeSet<>();
                 posts.add(p);
                 categoriasPost.put(p.getCategoria(), posts);
             }
