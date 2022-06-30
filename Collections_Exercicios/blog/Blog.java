@@ -4,7 +4,7 @@ public class Blog {
     private ArrayList<Post> posts;
 
     public Blog() {
-        this.posts = new ArrayList<>();
+        this.posts = new ArrayList<Post>();
     }
 
     public void adicionarPostagem(Post post){
