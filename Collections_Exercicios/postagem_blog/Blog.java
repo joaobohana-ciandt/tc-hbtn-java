@@ -83,7 +83,7 @@ public class Blog {
     }
 
     public Map<Autor, Set<Post>> obterTodosPostsPorAutor(){
-        HashMap<Autor, Set<Post>> categoriasPost = new HashMap<>();
+        Map<Autor, Set<Post>> categoriasPost = new TreeMap<>();
 
         for(Post p: posts){
             if(categoriasPost.containsKey(p.getAutor())){
