@@ -70,10 +70,10 @@ public class Banco {
                 }
             } else {
                 for(int i = 0; i < clientes.size(); i++){
-                    System.out.printf("  Cliente: %s [%d]\n", clientes.get(i).getNome(), i + 1);
+                    System.out.printf("Cliente: %s [%d]\n", clientes.get(i).getNome(), i + 1);
                     ArrayList<Double> transacoes = clientes.get(i).getTransacoes();
                     for(int j = 0; j < transacoes.size(); j++){
-                        System.out.printf("    [%d] valor %.2f\n", j + 1, transacoes.get(j));
+                        System.out.printf("  [%d] valor %.2f\n", j + 1, transacoes.get(j));
                     }
                 }
             }
