@@ -20,4 +20,8 @@ public class ConsultaPessoas {
         Map<String, Long> retorno = todasPessoas.stream().collect(groupingBy(Pessoa::getCargo, Collectors.counting()));
         return retorno;
     }
+
+    public static Map<String, Map<Integer, Long>> obterContagemPessoasPorCargoEIdade(List<Pessoa> todasPessoas) {
+        return todasPessoas.stream().collect(groupingBy(Pessoa::getCargo, groupingBy(Pessoa::getIdade, counting())));
+    }
 }
