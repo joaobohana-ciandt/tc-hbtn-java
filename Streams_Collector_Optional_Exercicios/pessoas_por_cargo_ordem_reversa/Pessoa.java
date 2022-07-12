@@ -41,10 +41,14 @@ public class Pessoa implements Comparable {
     @Override
     public int compareTo(Object o) {
         Pessoa comparando = (Pessoa) o;
-        if(comparando.nome == this.nome){
+        int comparacao = nome.compareTo(comparando.nome);
+
+        if(comparacao < 0){
+            return -1;
+        } else if(comparacao > 0){
+            return 1;
+        } else {
             return 0;
         }
-
-        return 1;
     }
 }
