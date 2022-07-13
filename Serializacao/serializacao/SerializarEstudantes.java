@@ -21,7 +21,7 @@ public class SerializarEstudantes<T> {
     }
 
     public List<T> desserializar(){
-        List<T> lista = new ArrayList<>();
+        ArrayList<T> lista = new ArrayList<>();
         try{
             FileInputStream fin = new FileInputStream("c:\\" + nomeArquivo);
             ObjectInputStream ois = new ObjectInputStream(fin);
