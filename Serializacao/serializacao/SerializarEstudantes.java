@@ -21,11 +21,11 @@ public class SerializarEstudantes<T> {
     }
 
     public List<T> desserializar(){
-        ArrayList<T> lista = new ArrayList<>();
+        List<T> lista = new ArrayList<>();
         try{
             FileInputStream fin = new FileInputStream("c:\\" + nomeArquivo);
             ObjectInputStream ois = new ObjectInputStream(fin);
-            lista = (ArrayList<T>) ois.readObject();
+            lista = (List<T>) ois.readObject();
             ois.close();
         } catch (Exception e){
             System.out.println("Nao foi possivel desserializar");
