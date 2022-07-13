@@ -25,7 +25,7 @@ public class SerializarEstudantes<T> {
         try{
             FileInputStream fin = new FileInputStream("c:\\" + nomeArquivo);
             ObjectInputStream ois = new ObjectInputStream(fin);
-            lista = (ArrayList) ois.readObject();
+            lista = (ArrayList<T>) ois.readObject();
             ois.close();
         } catch (Exception e){
             System.out.println("Nao foi possivel desserializar");
